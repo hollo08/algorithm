@@ -8,6 +8,13 @@ public class CoinChange {
         int m = 27;
         System.out.println(change(a, m));
     }
+
+    /**
+     *
+     * @param a coin types
+     * @param m amount of count money
+     * @return
+     */
     public static int change(int[] a, int m){
         int[] f = new int[m+1];
         Util.printArray(f);
