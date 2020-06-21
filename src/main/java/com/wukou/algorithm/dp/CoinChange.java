@@ -4,7 +4,7 @@ import com.wukou.algorithm.Util;
 
 public class CoinChange {
     public static void main(String[] args) {
-        int[] a = {2, 5, 7};
+        int[] a = {2, 5, 10};
         int m = 27;
         System.out.println(change(a, m));
     }
