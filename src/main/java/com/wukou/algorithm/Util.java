@@ -9,4 +9,8 @@ public class Util {
         sb.append("]");
         System.out.println(sb.toString());
     }
+
+    public static void println(Object o){
+        System.out.println(o);
+    }
 }
