@@ -1,1 +1,14 @@
 *.class
+*.iml
+*.ipr
+*.iws
+.idea
+target
+rebel.xml
+node_modules/
+.DS_Store
+.project
+user-config.json
+npm-debug.log
+.classpath
+.settings
