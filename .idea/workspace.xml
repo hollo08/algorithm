@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94aad74f-6e09-43b7-9870-342191bbbed2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wukou/algorithm/thread/UseVolatile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wukou/algorithm/thread/SafeThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wukou/algorithm/thread/UseVolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wukou/algorithm/thread/UseVolatile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dfGCQbMbvN9xoe5x9lJzxdN1Cp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,7 +51,7 @@
       <recent name="F:\workspace\algorithm\src\main\java\com\wukou\algorithm\tree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UseVolatile">
+  <component name="RunManager" selected="Application.SafeThread">
     <configuration name="AVLTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wukou.algorithm.tree.AVLTree" />
       <module name="algorithm" />
@@ -72,6 +71,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wukou.algorithm.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SafeThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wukou.algorithm.thread.SafeThread" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wukou.algorithm.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,6 +113,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SafeThread" />
         <item itemvalue="Application.UseVolatile" />
         <item itemvalue="Application.AVLTree" />
         <item itemvalue="Application.CoinChange" />
@@ -118,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1592746749311</updated>
       <workItem from="1592746751009" duration="359000" />
-      <workItem from="1592808606495" duration="4279000" />
+      <workItem from="1592808606495" duration="6615000" />
     </task>
     <servers />
   </component>
@@ -130,26 +143,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="686" y="257" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592811832115" />
+    <state x="482" y="12" key="CommitChangelistDialog2" timestamp="1592817258591">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="482" y="12" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592817258591" />
     <state width="314" height="242" key="DatabaseViewActions_Filter" timestamp="1592808764255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="314" height="242" key="DatabaseViewActions_Filter/0.0.1920.1040@0.0.1920.1040" timestamp="1592808764255" />
-    <state width="1864" height="262" key="GridCell.Tab.0.bottom" timestamp="1592812330733">
+    <state width="1864" height="262" key="GridCell.Tab.0.bottom" timestamp="1592817958695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1864" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592812330733" />
-    <state width="1864" height="262" key="GridCell.Tab.0.center" timestamp="1592812330732">
+    <state width="1864" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592817958695" />
+    <state width="1864" height="262" key="GridCell.Tab.0.center" timestamp="1592817958695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1864" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592812330732" />
-    <state width="1864" height="262" key="GridCell.Tab.0.left" timestamp="1592812330732">
+    <state width="1864" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592817958695" />
+    <state width="1864" height="262" key="GridCell.Tab.0.left" timestamp="1592817958694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1864" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592812330732" />
-    <state width="1864" height="262" key="GridCell.Tab.0.right" timestamp="1592812330733">
+    <state width="1864" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592817958694" />
+    <state width="1864" height="262" key="GridCell.Tab.0.right" timestamp="1592817958695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1864" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592812330733" />
+    <state width="1864" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592817958695" />
+    <state x="374" y="92" key="Maven.ArtifactSearchDialog" timestamp="1592817620401">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="374" y="92" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592817620401" />
   </component>
   <component name="masterDetails">
     <states>
