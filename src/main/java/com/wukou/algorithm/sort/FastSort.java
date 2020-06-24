@@ -9,7 +9,11 @@ public class FastSort {
     public static void main(String[] args) {
         int[] a = new int[]{6, 5, 7, 2, 4, 8, 11, 4, 10};
         sort(a, 0, a.length - 1);
-        Util.printArray(a);
+        int t = 10;
+        for (; ; t--) {
+            Util.println(t);
+        }
+        //Util.printArray(a);
     }
 
     public static void sort(int[] array, int l, int r) {
@@ -18,7 +22,7 @@ public class FastSort {
         }
         int low = l;
         int high = r;
-        int key = array[low];//key is a reference value, bigger is on the right, smaller one is one the left.
+        int key = array[low];//key is a reference value, bigger is on the right, smaller is one the left.
         while (low < high) {
             Util.println(low);
             for (; ; high--) {

@@ -1,0 +1,23 @@
+ack = acknowledgment
+url:https://mp.weixin.qq.com/s/tH8RFmjrveOmgLvk9hmrkw
+1:The principle reason for the three-way handshake is to prevent old duplicate connection initiations from causing confusion
+
+ack attacks:
+net.ipv4.tcp_syncookies = 1
+or
+1,Controls the maximum value of this queue
+net.core.netdev_max_backlog
+SYN_RCVD 状态连接的最大个数：
+2,Controls the maximum number of  SYN_RCVD state connections
+net.ipv4.tcp_max_syn_backlog
+3,When the processing capacity is overflown, The new SYN is directly returned to RST and the connecitons is discarded.
+net.ipv4.tcp_abort_on_overflow
+
+
+four-way wave
+#define TCP_TIMEWAIT_LEN (60*HZ) /* how long to wait to destroy TIME-WAIT state, about 60 seconds  */
+
+keeplive mechanism
+net.ipv4.tcp_keepalive_time=7200 (s)
+net.ipv4.tcp_keepalive_intvl=75 (s)
+net.ipv4.tcp_keepalive_probes=9 (times)
