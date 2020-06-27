@@ -6,8 +6,11 @@ public class BinaryTree<K extends Comparable, V> {
         BinaryTree<Integer, Integer> tree =
                 new BinaryTree<Integer, Integer>(root);
         tree.put(1, 11);
-        tree.put(1, 22);
+        tree.put(2, 22);
+        tree.put(33, 44);
         System.out.println(tree);
+        tree.preOrder(root);
+        tree.inOrder(root);
     }
 
 
@@ -60,7 +63,35 @@ public class BinaryTree<K extends Comparable, V> {
         return node;
     }
 
+    /**
+     * Order:root->left->right
+     * @param node
+     */
+    public void preOrder(Node node){
+        if(node == null){
+            return;
+        }
+        print(node);
+        preOrder(node.getLeft());
+        preOrder(node.getRight());
+    }
 
+    /**
+     * Order:left->root->right
+     * @param node
+     */
+    public void inOrder(Node node){
+        if(node == null){
+            return;
+        }
+        preOrder(node.getLeft());
+        print(node);
+        print(node.getRight());
+    }
+
+    private void print(Node node){
+        System.out.println("{" + node.getKey() +" : " + node.getValue() + "}");
+    }
 
     static class Node<k, v>{
         private Node<k, v> left;

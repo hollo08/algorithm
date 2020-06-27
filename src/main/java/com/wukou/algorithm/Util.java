@@ -7,7 +7,7 @@ public class Util {
             sb.append(aa + ",");
         }
         sb.append("]");
-        System.out.println(sb.toString());
+        System.out.print(sb.toString());
     }
 
     public static void println(Object o){

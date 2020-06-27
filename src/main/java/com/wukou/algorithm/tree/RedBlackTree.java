@@ -10,8 +10,7 @@ import com.wukou.algorithm.Util;
  * 3, All leaves (NIL) are black.
  * 4, If a node is red, then both its children are black.
  * 5, Every path from a given node to any of its descendant NIL nodes goes through the same number of black nodes.
- * @param <K>
- * @param <V>
+ * 6, Red nodes will be only be left children
  */
 public class RedBlackTree<K extends Comparable, V> {
     private static Boolean RED = true;
@@ -40,39 +39,37 @@ public class RedBlackTree<K extends Comparable, V> {
 
     /**
      * Left Rotate
-     * //      node                                             R
-     * //     /    \              left rotate                /    \
-     * //    n1     R           -------------->            node    n3
-     * //         /   \                                   /    \
-     * //       n2     n3                               n1    n2
+     *       node                                             R
+     *      /    \              left rotate                /    \
+     *     n1     R           -------------->            node    n3
+     *          /  \                                    /    \
+     *        n2    n3                                n1    n2
      *
      */
     private Node leftRotate(Node node){
-        Node x = node.right;
-        //left rotate
-        node.right = x.left;
-        x.left = node;
-        x.color = node.color;
+        Node r = node.right;
+        node.right = r.left;
+        r.left = node;
+        r.color = node.color;
         node.color = RED;
-        return x;
+        return r;
     }
     /**
-     * 右旋转
-     * //      node                                              R
-     * //     /    \              right rotate                /    \
-     * //    R     n3           ------------->              n1     node
-     * //  /  \                                                  /    \
-     * // n1   n2                                               n2    n3
+     * right rotate
+     *       node                                              R
+     *      /    \              right rotate                /    \
+     *     R     n3           ------------->              n1     node
+     *   /  \                                                  /    \
+     * n1   n2                                               n2    n3
      *
      */
     private Node rightRotate(Node node){
-        Node x = node.left;
-        //right rotate
-        node.left = x.right;
-        x.right = node;
-        x.color = node.color;
+        Node r = node.left;
+        node.left = r.right;
+        r.right = node;
+        r.color = node.color;
         node.color = RED;
-        return x;
+        return r;
     }
     public void add(K key, V value) {
         root = add(root, key, value);
@@ -212,7 +209,7 @@ public class RedBlackTree<K extends Comparable, V> {
         RedBlackTree<Integer, String> tree = new RedBlackTree<>();
         tree.add(1, "one");
         tree.add(2, "two");
-        Util.println(tree.get(1));
+        Util.println(tree.get(2));
     }
 
     private class Node<K, V>{
