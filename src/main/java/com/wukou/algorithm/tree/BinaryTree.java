@@ -3,8 +3,7 @@ package com.wukou.algorithm.tree;
 public class BinaryTree<K extends Comparable, V> {
     public static void main(String[] args) {
         Node<Integer, Integer> root = new Node<Integer, Integer>(22, 33);
-        BinaryTree<Integer, Integer> tree =
-                new BinaryTree<Integer, Integer>(root);
+        BinaryTree<Integer, Integer> tree =  new BinaryTree<Integer, Integer>(root);
         tree.put(1, 11);
         tree.put(2, 22);
         tree.put(33, 44);
